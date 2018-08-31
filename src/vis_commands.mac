@@ -1,0 +1,45 @@
+/vis/verbose 0
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+
+/run/initialize
+
+
+/vis/open OGL 600x600-0+0
+/vis/viewer/set/autoRefresh false
+
+/vis/drawVolume
+/vis/viewer/set/upVector 0 0 1
+/vis/viewer/set/viewpointVector 1 1 1
+
+/vis/viewer/set/style surface
+/vis/viewer/set/auxiliaryEdge true
+/vis/viewer/set/lineSegmentsPerCircle 24
+
+/vis/geometry/set/visibility World 0 false
+#/vis/geometry/set/visibility Detector 0 false
+#/vis/geometry/set/visibility Box 0 false
+
+#/vis/geometry/set/colour World    0 1.0 1.0 1.0 0.025
+/vis/geometry/set/colour Detector 0 1.0 0.0 0.0 0.5
+/vis/geometry/set/colour Box      0 0.0 0.0 1.0 0.25
+
+/vis/geometry/set/colour CopperSphere 0 0.78 0.37 0.22 0.25
+/vis/geometry/set/colour LeadShield   0 0.59 0.57 0.51 0.25
+/vis/geometry/set/colour HDPEShield   0 0.80 0.80 0.80 0.125
+
+/vis/geometry/set/colour BoxLeadShield  0 0.59 0.57 0.51 0.25
+/vis/geometry/set/colour BoxHDPEShield  0 0.80 0.80 0.80 0.125
+/vis/geometry/set/colour BoxSteelShield 0 0.27 0.51 0.71 0.25
+
+/vis/geometry/set/colour Tube 0 0.78 0.37 0.22 0.4
+
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/default/setDrawStepPts true
+/vis/modeling/trajectories/drawByParticleID-0/default/setStepPtsSize 2
+
+/vis/viewer/refresh
+/vis/viewer/set/autoRefresh true
+
