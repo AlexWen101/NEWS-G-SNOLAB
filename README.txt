@@ -102,7 +102,7 @@ indexed by the date & time it was created, the type of the run, the location of 
 ## Notes 
 
 If there are any errors in running, and especially in visualization, make sure the following variables
-are set: 
+are set while you build geant4: 
 
     GEANT4_BUILD_MULTITHREADED:BOOL=ON
     GEANT4_INSTALL_DATA:BOOL=ON
