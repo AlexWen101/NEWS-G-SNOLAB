@@ -1,0 +1,44 @@
+
+
+# Options with recommended times to run on Graham (1 core, 1e6 particles):
+#  * AmBeNeutron       (40 minutes)
+#  * AmBeCaptureGamma  (unknown)
+#  * AmBeGamma         (unknown)
+#  * Na22Gamma         (unknown)
+#  * BackgroundNeutron (80 minutes)
+#  * BackgroundGamma   (not supported yet)
+
+# Run Type Options: 
+# ambeneutron 
+# ddneutron
+# ambecapturegamma (4.4 MeV)
+# ambegamma (spectrum <1 MeV)
+# na22gamma 
+# ambeneutron 
+
+# Run Count is how many particles
+
+# Source Location Options (all without glovebox except the default position)
+# origin
+# location1
+# location2
+# location3
+# location4 (no glovebox)
+# by default it is location4 WITH the glovebox
+
+# Cuts: 
+# by default is 0.7 mm and 990 eV
+
+
+/run/numberOfThreads 2
+
+/control/alias runType ambecapturegamma 
+/control/alias runName Run
+/control/alias runLocation location5
+
+#/run/setCut 0.000001 mm 
+#/cuts/setLowEdge 100 eV 
+
+
+
+
