@@ -1,5 +1,7 @@
 # Shield Simulation
 
+# Contributors: Originally used by Duane Byer, and created by Alexis Brossard. Modified by Alex Wen. 
+
 ################################################################################################
 
 ## Introduction
